@@ -4,7 +4,7 @@ import java.util.function.Predicate;
 
 //1. Ковариантный фильтр. Определить метод filter, принимающий список с wildcard ? extends T и предикат ? super T.
 // Метод должен возвращать отфильтрованный список элементов.
-//Протестируй с List<Integer> и предикатом, фильтрующим чётные числа. /
+//Протестируй с List<Integer> и предикатом, фильтрующим чётные числа.
 public class Main {
     private static <T> List<T> filter(List<? extends T> _in, Predicate<? super T> predicate){
         List<T> _out = new ArrayList<T>();
